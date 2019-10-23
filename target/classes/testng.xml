@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AUTOMATION Testing" thread-count="3" >
+
+<listeners>
+
+<listener class-name="com.testing.qa.ExtentReportListener.ExtentReporterNG"/>
+
+</listeners>
+
+<test name="App Test Cases">
+<parameter name="searchKey" value="UK" />
+<classes>
+<class name="com.testing.qa.testcases.LoginPageTest"></class>
+<class name="com.testing.qa.testcases.HomePageTest"></class>
+<class name="com.testing.qa.testcases.MyAccountPageTest"></class>
+<class name="com.testing.qa.testcases.OrderHistoryPageTest"></class>
+<class name="com.testing.qa.testcases.CreditSlipsPageTest"></class>
+
+
+</classes>
+</test>
+</suite>
